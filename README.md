@@ -47,4 +47,4 @@ Now with i=log_3
 => $\Theta$(n)
 
 
-I apologize if this is incorrect, but I'm having a hard time with the analysis portions. My thought process is to identify the constants first, they do not matter when thinking about the asymptotic complexity, the comparisons at the very begining, the actual division of the of the arrays in addition to when they are added together all are constant in their time, so we can call it a +C to the end I think.
+
