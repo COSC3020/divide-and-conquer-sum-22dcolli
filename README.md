@@ -26,25 +26,29 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
-ANSWER(Revised):
-Start with
-T(n)=1 for n<1 and T(n)=3*T(n/3)
+## Answer(formatted?)
+The recurrence relation is:
 
-=>T(n/3)=3*T(n/3/3)
+$$\begin{equation}T(n)=\begin{cases}1 & \text{if $n&le;1$} \\
+3T(\frac{n}{3}) & \text{if $n>1$}.\end{cases}\end{equation}$$
 
-=>T(n)=3(3T(n/9))
+Substitute In:
 
-=>9T(n/9)
+$T(\frac{n}{3}) =3*T(\frac{n}{3})$
 
-=>(3^i)*T(n/3^i)
+$T(n)=3(3T(\frac{(\frac{n}{3})}{3})$
 
-Now with i=log_3
+$T(n)=9T(\frac{n}{9})$
 
-=>3^log_3 of n*T(n/3^log_3 of n)
+$T(n)=3^{i}*T(\frac{n}{3^{i}})$
 
-=>n*T(1)
+$Inserting$ $i=\log_{3} :$
 
-=> $\Theta$(n)
+$=>(3^{log_{3}})nT(\frac{n}{3^{log_{3n}}})$
+
+$=>nT(1)$
+
+$=>\Theta(n)$
 
 
 
